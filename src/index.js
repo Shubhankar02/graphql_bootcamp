@@ -2,7 +2,6 @@ import {
     GraphQLServer
 } from 'graphql-yoga'
 
-<<<<<<< HEAD
 // Demo post data
 const posts = [{
     id : 1,
@@ -22,16 +21,6 @@ const typeDefs = `
     type Query {
         posts(query: String) : [Post!]!
         hello : String!
-=======
-// Type Definations (Scheme)
-const typeDefs = `
-    type Query {
-        me : User!
-    }
-
-    type User {
-        id : ID!
->>>>>>> c8f27a9b1b866c8a13a485645e8c2a53019742d5
         name : String!
         email : String!
         age : Int
@@ -48,7 +37,6 @@ const typeDefs = `
 `
 // Resolvers
 const resolvers = {
-<<<<<<< HEAD
     Query : {
         hello() {
             return 'This is my first query!'
@@ -74,16 +62,6 @@ const resolvers = {
         },
         bio () {
             return 'Software Engineer'
-=======
-    Query: {
-        me () {
-            return {
-                id : '34896',
-                name : 'Shubh',
-                email : 'shborade@gmail.com',
-                age : 21
-            }
->>>>>>> c8f27a9b1b866c8a13a485645e8c2a53019742d5
         }
     }
 }
